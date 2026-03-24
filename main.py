@@ -10,7 +10,7 @@ app = FastAPI(title="Sentiment Analysis Prediction API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # for development
+    allow_origins=["https://sentiment-analysis-frontend-bay.vercel.app/"],  # for development
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
